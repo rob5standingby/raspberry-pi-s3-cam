@@ -10,11 +10,6 @@ import yaml
 with open("config.yml", 'r') as ymlfile:
     cfg = yaml.load(ymlfile)
 
-print(cfg['debug'])
-
-if cfg['debug']:
-  print 'yeh'
-
 # photo props
 image_width = cfg['image_settings']['horizontal_res']
 image_height = cfg['image_settings']['vertical_res']
